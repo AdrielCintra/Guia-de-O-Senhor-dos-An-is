@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espécies - Senhor dos Anéis</title>
+    <meta name="description" content="Tudo o que você precisa saber sobre a terra média está aqui">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho__titulo">O Senhor dos Anéis</h2> 
+        <nav class="cabecalho__navs">
+            <a class="cabecalho__navs__paginas" href="index.html">Terra Média</a>
+            <a class="cabecalho__navs__paginas" href="aneis.html">Anéis</a>
+            <a class="cabecalho__navs__paginas" href="especies.html">Espécies</a>
+        </nav>
+    </header>
+    
+    <main>
+        <ul class="menu-especies">
+
+            <!-- Povos Livres -->
+            <li class="classes">
+                <button class="botao__classes" onclick="toggleMenu(this)">Povos Livres</button>
+                <ul class="sublista">
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Humanos</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Variam em altura, peso e cor de pele; atléticos e mortais.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Gondor, Rohan, Arnor; sociedades complexas, cavalaria, agricultura, longas tradições.<br>
+                            <strong>Personagens famosos:</strong> Aragorn, Boromir, Faramir, Éowyn, Denethor.<br>
+                            <img class="img__menu" src="/img/homens.jpeg" width="256px" height="384px" alt="imagem de Aragorn e Boromir">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Elfos</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Altos, elegantes, orelhas pontudas, imortais. Guerreiros ágeis e inteligentes.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Lothlórien, Rivendell, Valinor; música, arte, magia e preservação da natureza.<br>
+                            <strong>Personagens famosos:</strong> Legolas, Galadriel, Elrond, Thranduil, Glorfindel.<br>
+                            <img class="img__menu" src="/img/elfos.jpeg" width="256px" height="384px" alt="imagem de Legolas, Galadriel e Elrond">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Anões</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Baixos, fortes, resistentes; barbas longas; excelentes artesãos.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Erebor, Khazad-dûm; clãs, hierarquia, mineração e joalheria.<br>
+                            <strong>Personagens famosos:</strong> Gimli, Thorin Escudo de Carvalho, Balin, Dwalin, Fili e Kili.<br>
+                            <img class="img__menu" src="/img/anões.jpeg" width="256px" height="384px" alt="imagem de Gimli e Thorin">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Hobbits</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Pequenos, pés peludos, discretos e resistentes.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> O Condado; festas, agricultura, culinária, jardins, vida pacífica.<br>
+                            <strong>Personagens famosos:</strong> Frodo, Sam, Bilbo, Merry, Pippin.<br>
+                            <img class="img__menu" src="/img/hobbtis.jpeg" width="256px" height="384px" alt="imagem de Frodo e Bilbo">
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Seres Espirituais -->
+            <li class="classes">
+                <button class="botao__classes" onclick="toggleMenu(this)">Seres Espirituais</button>
+                <ul class="sublista">
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Ainur</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Seres espirituais, forma flexível, imortais e poderosos.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Criados por Eru Ilúvatar; incluem Valar e Maiar; moldam e protegem a Terra-média.<br>
+                            <strong>Personagens famosos:</strong> Gandalf, Sauron, Saruman, Manwë, Varda, Melkor (Morgoth).<br>
+                            <img class="img__menu" src="/img/ainur.jpeg" width="256px" height="384px" alt="imagem dos principais Ainur">
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Criaturas Corrompidas ou Malignas -->
+            <li class="classes">
+                <button class="botao__classes" onclick="toggleMenu(this)">Criaturas Corrompidas ou Malignas</button>
+                <ul class="sublista">
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Orcs</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Pele escura ou verde, feições grotescas, ágeis e fortes.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Minas e fortalezas sombrias; servos de Sauron; sociedades baseadas em força e obediência.<br>
+                            <strong>Personagens famosos:</strong> Shagrat, Grishnákh.<br>
+                            <img class="img__menu" src="/img/orcs.jpeg" width="256px" height="384px" alt="imagem de um orc">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Uruk-hai</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Maiores e mais fortes que orcs; resistentes à luz do dia.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Criados por Sauron e Saruman; exércitos disciplinados e mortais.<br>
+                            <strong>Personagens famosos:</strong> Líderes Uruk-hai da Guerra do Anel.<br>
+                            <img class="img__menu" src="/img/uruk hai.jpeg" width="256px" height="384px" alt="imagem de um Uruk-hai">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Trolls / Olog-hai</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Gigantes, força descomunal; Olog-hai mais inteligentes.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Montanhas e cavernas; brutais e violentos.<br> 
+                            <strong>Personagens famosos:</strong> Troll de Moria, Olog-hai de Sauron.<br>
+                            <img class="img__menu" src="/img/troll.jpeg" width="256px" height="384px" alt="imagem de um Troll">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Dragões</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Gigantes, escamas resistentes, asas poderosas, cospem fogo; inteligentes.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Covas e montanhas; gananciosos e territoriais.<br>
+                            <strong>Personagens famosos:</strong> Smaug.<br>
+                            <img class="img__menu" src="/img/smaug.jpeg" width="256px" height="384px" alt="imagem de Smaug">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Balrogs</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Gigantes de sombra e fogo, imortais espirituais corrompidos; chicotes flamejantes.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Locais sombrios, raros e temidos.<br>
+                            <strong>Personagens famosos:</strong> Balrog de Moria (Durin’s Bane).<br>
+                            <img class="img__menu" src="/img/balrog.jpeg" width="256px" height="384px" alt="imagem de um Balrog">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Lobos malignos (Wargs)</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Lobos gigantes, dentes afiados, força superior a lobos normais.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Florestas escuras e montanhas; usados como montaria por orcs; predadores ferozes.<br>
+                            <strong>Personagens famosos:</strong> Wargs na Floresta das Trevas.<br>
+                            <img class="img__menu" src="/img/wargs.jpeg" width="256px" height="384px" alt="imgem de um orc montado em um Warg">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Nazgûl</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Humanos corrompidos, espectrais, aterrorizantes.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Servos de Sauron; perseguem o Um Anel; imortais e ligados à magia negra.<br>
+                            <strong>Personagens famosos:</strong> O Rei-Bruxo de Angmar e os oito outros Nazgûl.<br>
+                            <img class="img__menu" src="/img/nazgul.jpeg" alt="imagem dos Nazgûl" width="704px" height="384px">
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Criaturas da Natureza -->
+            <li class="classes">
+                <button class="botao__classes" onclick="toggleMenu(this)">Criaturas da Natureza</button>
+                <ul class="sublista">
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Ents</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Humanóides em forma de árvore; troncos robustos, folhas e musgos cobrindo o corpo.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Fangorn; guardiões da natureza; falam Entish; lentos, sábios e raros.<br>
+                            <strong>Personagens famosos:</strong> Barbárvores (Treebeard).<br>
+                            <img class="img__menu" src="/img/ents.jpeg" width="256px" height="384px" alt="imagem de um Barbárvore">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Huorns</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Árvores parcialmente conscientes, galhos móveis, aparência similar a árvores comuns.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Florestas antigas; podem cercar e engolir inimigos; intermediários entre Ents e árvores normais.<br>
+                            <strong>Personagens famosos:</strong> Huorns em Fangorn que atacam os orcs.<br>
+                            <img class="img__menu" src="/img/huorns.jpeg" width="256px" height="384px" alt="imagem de um Huorn">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Águias gigantes</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Gigantes, envergadura enorme, olhos aguçados, força imensa.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Regiões montanhosas remotas; ajudam heróis, transporte e resgate.<br>
+                            <strong>Personagens famosos:</strong> Gwaihir, Landroval.<br>
+                            <img class="img__menu" src="/img/aguias.jpeg" width="256px" height="384px" alt="imagem de uma Águia Gigante">
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Animais e Seres Especiais -->
+            <li class="classes">
+                <button class="botao__classes" onclick="toggleMenu(this)">Animais e Seres Especiais</button>
+                <ul class="sublista">
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Cavalos especiais (Mearas)</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Grandes, inteligentes, resistentes, rápidos e leais.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Rohan; montados pelos Rohirrim; compreendem comandos complexos e têm grande lealdade.<br>
+                            <strong>Personagens famosos:</strong> Shadowfax.<br>
+                            <img class="img__menu" src="/img/mearas.jpeg" width="256px" height="384px" alt="imagem de um Mearas">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Aranhas gigantes</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Gigantes, venenosas, pernas longas, força enorme.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Florestas escuras e cavernas; predadoras silenciosas e mortais.<br>
+                            <strong>Personagens famosos:</strong> Shelob.<br>
+                            <img class="img__menu" src="/img/aranha.jpeg" width="256px" height="384px" alt="imagem de uma Aranha Gigante">
+                        </p>
+                    </li>
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Criaturas antigas desconhecidas</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Mistérios; podem ser aquáticas ou subterrâneas, aparência incomum.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Locais isolados ou esquecidos, lendas, perigosas e raras.<br>
+                            <strong>Personagens famosos:</strong> O “Observador na Água”.<br>
+                            <img class="img__menu" src="/img/observador.jpeg" width="256px" height="384px" alt="imagem do Observador na água">
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Outros Seres -->
+            <li class="classes">
+                <button class="botao__classes" onclick="toggleMenu(this)">Outros Seres</button>
+                <ul class="sublista">
+                    <li>
+                        <button class="botao__especie" onclick="toggleDescricao(this)">Mortos-vivos</button>
+                        <p class="descricao">
+                            <strong>Características físicas:</strong> Humanos amaldiçoados, cadavéricos, ainda com força e agilidade.<br>
+                            <strong>Habitat, cultura e curiosidades:</strong> Dunharrow; ligados a antigos juramentos; servos leais de Aragorn.<br>
+                            <strong>Personagens famosos:</strong> Exército dos Mortos.<br>
+                            <img class="img__menu" src="/img/exercito dos mortos.jpeg" width="256px" height="384px" alt="imagem do Exército dos Mortos">
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__info">Elaborado por Adriel Cintra</p>
+        <p class="rodape__redes">Minhas redes: 
+            <a href="https://instagram.com/Adriel_Cintra" class="rodape__redes__botoes">Instagram</a>
+            <a href="https://www.linkedin.com/in/adriel-cintra-245283233/" class="rodape__redes__botoes">Linkedin</a>
+            <a href="https://github.com/AdrielCintra" class="rodape__redes__botoes">Github</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
