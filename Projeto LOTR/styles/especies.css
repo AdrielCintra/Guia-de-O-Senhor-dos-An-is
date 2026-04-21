@@ -1,0 +1,53 @@
+.menu-especies {
+    border: var(--dourado-anel) 3px solid;
+    border-radius: 10px;
+    margin: 2em;
+}
+
+/* Esconder listas e descrições por padrão */
+.sublista {
+    display: none; /* esconde todas as sublistas */
+    margin-left: 20px; /* opcional, recuo */
+}
+
+.descricao {
+    display: none; /* esconde todas as descrições */
+    margin-left: 20px; /* opcional, recuo */
+    font-family: var(--fonte-primaria);
+    font-size: 18px;
+    background-color: var(--preto-mordor);
+    color: var(--dourado-anel);
+    border: solid var(--verde-elfico) 3px;
+    border-radius: 10px;
+}
+
+/* Quando ativos, exibem */
+.sublista.ativo {
+    display: block;
+}
+
+.descricao.ativo {
+    display: block;
+}
+
+.botao__classes {
+    font-family: var(--fonte-secundaria);
+    color: var(--dourado-anel);
+    background-color: var(--verde-elfico);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 0 1em;
+    margin: 0.5em;
+}
+
+.botao__especie {
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--pergaminho);
+    background-color: var(--verde-musgo);
+    border-radius: 12px;
+    padding: 0 1em;
+    margin: 0.25em;
+}
