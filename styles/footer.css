@@ -1,0 +1,23 @@
+.rodape {
+    background-color: var(--verde-elfico);
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    color: var(--dourado-anel);
+    padding: 1em;
+    border-top-style: double;
+    border-color: var(--dourado-anel);
+}
+
+.rodape__redes__botoes {
+    text-decoration: none;
+    color: var(--dourado-anel);
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 0.3em;
+}
+
+.rodape__redes__botoes:hover {
+    background-color: var(--verde-musgo);
+}
