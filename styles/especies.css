@@ -1,80 +1,155 @@
-main{
+/* ====== LAYOUT PRINCIPAL ====== */
+#main__especies {
     display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    border: var(--dourado-anel) 3px solid; 
-    border-radius: 10px; 
-    margin: 2em; 
-    padding: 1em;
+    align-items: flex-start;
+    gap: 30px;
+
+    border: var(--dourado-anel) 3px solid;
+    border-radius: 10px;
+
+    margin: 2em;
+    padding: 1.5em;
 }
 
-.menu-especies,
+/* ====== MENU LATERAL ====== */
+.menu {
+    width: 320px;
+    min-width: 320px;
+}
+
+.menu-especies {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+
+    background-color: var(--preto-mordor);
+    border-radius: 10px;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* título */
+.titulo__menu {
+    font-family: var(--fonte-secundaria);
+    color: var(--dourado-anel);
+    font-size: 28px;
+    font-weight: 500;
+
+    border-bottom: 2px solid var(--dourado-anel);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+
+    text-align: center;
+}
+
+/* ====== LISTAS ====== */
 .sublista {
     list-style: none;
-    padding-left: 0;
-    margin-left: 0;
+    padding-left: 10px;
+    margin-top: 10px;
+
+    display: none;
 }
 
-.menu-especies{
+.sublista.ativo {
+    display: block;
+}
+
+/* ====== DESCRIÇÃO (caso ainda use no menu) ====== */
+.descricao {
+    display: none;
+
+    margin-top: 10px;
+    padding: 1em;
+
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+
     background-color: var(--preto-mordor);
+    color: var(--dourado-anel);
+
+    border: 2px solid var(--verde-elfico);
     border-radius: 10px;
 }
 
-/* Esconder listas e descrições por padrão */ 
-.sublista { 
-    display: none; /* esconde todas as sublistas */ 
-    margin-left: 20px; /* opcional, recuo */ } 
-    
-.descricao { 
-    display: none; /* esconde todas as descrições */ 
-    margin-left: 20px; /* opcional, recuo */ 
-    font-family: var(--fonte-primaria); font-size: 18px; 
-    background-color: var(--preto-mordor); 
-    color: var(--dourado-anel); 
-    border: solid var(--verde-elfico) 3px; 
-    border-radius: 10px; } 
-
-.img__menu {
-    border-radius: 8px;
-    margin: 1em;
+.descricao.ativo {
+    display: block;
 }
-    
-/* Quando ativos, exibem */ 
-.sublista.ativo { 
-    display: block; } 
-    
-.descricao.ativo { 
-    display: block; } 
-    
-.botao__classes { 
-    font-family: var(--fonte-secundaria); 
-    color: var(--dourado-anel); 
-    background-color: var(--verde-elfico); 
-    font-size: 20px; 
-    font-weight: 500; 
-    border-radius: 12px; 
-    padding: 0 1em; 
-    margin: 0.5em; } 
-    
-.botao__especie { 
-    font-family: var(--fonte-secundaria); 
-    font-size: 18px; 
-    font-weight: 400; 
-    color: var(--pergaminho); 
-    background-color: var(--verde-musgo); 
-    border-radius: 12px; 
-    padding: 0 1em; 
-    margin: 0.25em; }
 
+/* ====== BOTÕES ====== */
+.botao__classes,
+.botao__especie {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 12px;
+    padding: 0.5em 1em;
+    margin: 0.4em 0;
+
+    transition: 0.25s ease;
+}
+
+/* botão principal */
+.botao__classes {
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--dourado-anel);
+    background-color: var(--verde-elfico);
+}
+
+/* botão secundário */
+.botao__especie {
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+
+    color: var(--pergaminho);
+    background-color: var(--verde-musgo);
+}
+
+/* hover */
+.botao__classes:hover,
+.botao__especie:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* ====== IMAGENS ====== */
+.img__menu {
+    width: 100%;
+    max-width: 260px;
+    border: solid 3px var(--dourado-anel);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* ====== PAINEL DIREITO ====== */
 #painel-conteudo {
+    flex: 1;
+
+    background-color: var(--pergaminho);
+    border-radius: 10px;
+
+    padding: 1.5em;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
     text-align: center;
 }
 
-.titulo__menu{
-    font-family: var(--fonte-secundaria);
-    color: var(--dourado-anel);
-    font-size: 30px;
-    font-weight: 500;
-    border-bottom: solid var(--dourado-anel);
-    padding: 0,5em;
+/* imagem do mapa */
+.mapa {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* ====== CONTEÚDO DINÂMICO (futuro ideal) ====== */
+.conteudo {
+    display: none;
+}
+
+.conteudo.ativo {
+    display: block;
 }

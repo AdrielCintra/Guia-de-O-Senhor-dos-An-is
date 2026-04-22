@@ -13,15 +13,24 @@
 }
 
 :root {
-  --verde-elfico: #1F3D2B;
-  --verde-musgo: #3F5A3A;
-  --marrom-terra: #4A2F1D;
-  --dourado-anel: #BFA76A;
-  --cinza-pedra: #5A5A5A;
-  --preto-mordor: #181818;
-  --pergaminho: #E6DCC2;
-  --fonte-principal: Cormorant Garamond;
-  --fonte-secundaria: cinzel;
+  /* ===== VERDES (mais vivos e usáveis) ===== */
+  --verde-elfico: #2F5D50;   /* antes muito escuro */
+  --verde-musgo: #4E7A63;
+
+  /* ===== TONS TERROSOS ===== */
+  --marrom-terra: #5A3822;
+
+  /* ===== DESTAQUE ===== */
+  --dourado-anel: #D4AF37; /* mais “anel do poder” mesmo */
+
+  /* ===== NEUTROS ===== */
+  --cinza-pedra: #6E6E6E;
+  --preto-mordor: #1E1E1E; /* menos “morto” que preto puro */
+  --pergaminho: #F5ECD7;   /* mais claro = melhor leitura */
+
+  /* ===== TIPOGRAFIA ===== */
+  --fonte-principal: 'Cormorant Garamond', serif;
+  --fonte-secundaria: 'Cinzel', serif;
 }
 
 body {
