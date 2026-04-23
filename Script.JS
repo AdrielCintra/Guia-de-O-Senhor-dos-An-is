@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
+  
 });
 
 // Alterna listas principais (sublistas)
