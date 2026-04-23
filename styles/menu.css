@@ -1,15 +1,13 @@
 .terra-media {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2em;
-    text-align: center;
-    align-items: center;
-    font-family: var(--fonte-principal);
-    margin: 3em 2em 2em 3em;
-    border: ridge;
-    border-color: var(--dourado-anel);
-    border-radius: 18px;
+    align-items: flex-start;
+    gap: 30px;
+
+    border: var(--dourado-anel) 3px solid;
+    border-radius: 10px;
+    font-family: var(--fonte-secundaria);
+    margin: 2em;
+    padding: 1.5em;
 }
 
 .regioes {
@@ -17,16 +15,35 @@
     border-radius: 18px;
     padding: 1em;
     margin: 1em;
-    max-width: 400px;
-    width: 100%;
+    width: 320px;
+    min-width: 320px;
 
 }
 
-.titulo, .subtitulo {
+.titulo {
+    font-family: var(--fonte-secundaria);
     color: var(--dourado-anel);
-    padding: 0.5em 0;
-    border-bottom-style:solid;
-    border-color: var(--dourado-anel);
+    font-size: 28px;
+    font-weight: 500;
+
+    border-bottom: 2px solid var(--dourado-anel);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: var(--fonte-secundaria);
+    color: var(--dourado-anel);
+    font-size: 20px;
+    font-weight: 500;
+
+    border-bottom: 2px solid var(--dourado-anel);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+
+    text-align: center;
 }
 
 .regioes__principais__ex {
@@ -36,14 +53,15 @@
     color: var(--pergaminho);
     border-radius: 8px;
     margin-bottom: 15px;
-    font-family: var(--fonte-secundaria);
-    font-size: 14px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
 }
 
 .regioes__principais {
     cursor: pointer;
     background-color: var(--verde-elfico);
     color: var(--pergaminho);
+    font-weight: 500;
     padding: 8px;
     border-radius: 6px;
     transition: 0.3s;

@@ -1,32 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const titulos = document.querySelectorAll(".regioes__principais");
+  const regioes = document.querySelectorAll(".regioes__principais");
+  const painel = document.getElementById("painel-conteudo");
 
-    console.log("Quantidade encontrada:", titulos.length);
+  regioes.forEach(regiao => {
 
-    titulos.forEach(titulo => {
-        titulo.addEventListener("click", () => {
+    regiao.addEventListener("click", () => {
 
-            console.log("Clique detectado!");
+      const descricao = regiao.nextElementSibling;
 
-            const todosConteudos = document.querySelectorAll(".regioes__principais__ex");
+      // se clicar na mesma → volta pro mapa
+      if (painel.dataset.active === regiao.textContent) {
+        painel.innerHTML = `
+          <img class="mapa" src="img/Mapa LOR.JPG">
+        `;
+        painel.dataset.active = "";
+        return;
+      }
 
-            todosConteudos.forEach(p => {
-                if (p !== titulo.nextElementSibling) {
-                    p.style.display = "none";
-                }
-            });
+      // joga conteúdo no painel
+      painel.innerHTML = descricao.innerHTML;
 
-            const conteudo = titulo.nextElementSibling;
+      painel.dataset.active = regiao.textContent;
 
-            if (conteudo.style.display === "block") {
-                conteudo.style.display = "none";
-            } else {
-                conteudo.style.display = "block";
-            }
-
-        });
     });
+
+  });
 
 });
 
